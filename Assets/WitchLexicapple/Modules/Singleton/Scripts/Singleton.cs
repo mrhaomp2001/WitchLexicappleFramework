@@ -1,5 +1,5 @@
 using UnityEngine;
-namespace MyNamespace
+namespace MysticalDreamers.WitchLexicapple
 {
     public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
