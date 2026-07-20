@@ -14,18 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MysticalDreamers.WitchLexicapple.StatConfig
   stats:
     stats:
-    - key: hp
-      label: hp
-      value: 100
     - key: maxHp
       label: maxHp
       value: 100
     - key: speed
       label: speed
-      value: 5
-    - key: attack
-      label: attack
-      value: 10
-    - key: defense
-      label: defense
       value: 5

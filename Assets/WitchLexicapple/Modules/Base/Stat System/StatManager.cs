@@ -13,8 +13,13 @@ namespace MysticalDreamers.WitchLexicapple
         {
             base.Awake();
 
+            if (config == null)
+                config = Resources.Load<StatConfig>("Config/StatConfig");
+
             if (config != null)
                 stats = config.Stats.Clone();
+            else
+                Debug.LogWarning($"{nameof(StatManager)}: no {nameof(StatConfig)} assigned and none found at 'Resources/Config/StatConfig'.");
         }
 
         public static float GetStat(StatKey key) => Instance.stats[key];

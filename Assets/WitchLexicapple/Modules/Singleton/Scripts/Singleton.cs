@@ -12,6 +12,13 @@ namespace MysticalDreamers.WitchLexicapple
                 {
                     _instance = FindAnyObjectByType<T>();
                 }
+
+                if (_instance == null)
+                {
+                    var go = new GameObject(typeof(T).Name);
+                    _instance = go.AddComponent<T>();
+                }
+
                 return _instance;
             }
         }
