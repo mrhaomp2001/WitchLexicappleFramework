@@ -41,7 +41,7 @@ namespace MysticalDreamers.WitchLexicapple
         public void Save()
         {
             var json = JsonConvert.SerializeObject(this);
-            SaveManager.Instance.Save(Id, json);
+            SaveManager.Instance.SaveEntity(Id, json);
         }
 
         protected virtual void OnLoaded()
